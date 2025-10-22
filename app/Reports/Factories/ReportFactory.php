@@ -25,7 +25,7 @@ class ReportFactory
             case 'csv':
                 return new CsvReport();
             case 'json':
-                return new JsonReport();
+                return new JsonReport(); //Adicionado na Factory a possibilidade de instanciar um arquivo json
             default:
                 throw new InvalidArgumentException("Tipo de relatório '{$type}' não suportado.");
         }
